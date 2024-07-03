@@ -1,0 +1,11 @@
+name: Output Information
+on:
+  workflow_dispatch:
+    branches:
+      - 'basic-react-github-workflow'
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output Github context
+        run: echo "${{ toJSON(github) }}"
