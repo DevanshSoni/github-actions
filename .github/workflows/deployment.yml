@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - 'basic-react-github-workflow'
+  workflow_dispatch:
+    branches:
+      - 'basic-react-github-workflow'
 
 jobs:
   test-frontend:
