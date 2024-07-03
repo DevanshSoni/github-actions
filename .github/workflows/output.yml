@@ -2,7 +2,7 @@ name: Output Information
 on:
   workflow_dispatch:
     branches:
-      - 'basic-react-github-workflow'
+      - basic-react-github-workflow
 jobs:
   info:
     runs-on: ubuntu-latest
