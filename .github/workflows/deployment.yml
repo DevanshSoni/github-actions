@@ -7,20 +7,20 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-      - name: Installing required node version
+      - name: Installing node version
         uses: actions/setup-node@v3
         with:
           node-version: 18
       - name: Installing dependencies
         run: npm install
-      - name: Run Lint Job
+      - name: Running lint step
         run: npm run lint
   test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/version@v3
-      - name: Installing Node version
+        uses: actions/checkout@v3
+      - name: Installing node version
         uses: actions/setup-node@v3
         with:
           node-version: 18
