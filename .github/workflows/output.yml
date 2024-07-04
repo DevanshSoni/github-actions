@@ -1,8 +1,9 @@
-name: Output Information
+name: Logging meta information
 on: workflow_dispatch
+
 jobs:
-  info:
-    runs-on: ubuntu-latest
+  output-information:
+    runs-on: unbuntu-latest
     steps:
-      - name: Output Github context
+      - name: Output Github Context
         run: echo "${{ toJSON(github) }}"
