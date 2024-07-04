@@ -32,4 +32,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploying artifact to Server
-      - run: echo "Releasing to Production..."
+        run: echo "Releasing to Production..."
